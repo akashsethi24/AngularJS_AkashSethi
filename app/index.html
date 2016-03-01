@@ -1,0 +1,68 @@
+<html ng-app="Assignment">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="app.css">
+  <script src="assets/angular.js"></script>
+  <script src="assets/angular-ui-router.min.js"></script>
+  <script src="Assignment.module.js"></script>
+  <script src="Assignment.route.js"> </script>
+  <script src="components/list/list.factory.js"></script>
+  <script src="components/list/list.controller.js"></script>
+  <script src="components/addStudent/addStudent.controller.js"></script>
+  <script src="components/addStudent/add.factory.js"></script>
+  <script src="components/list/list.html"></script>
+
+  <style type="text/css">
+    #header{
+      height: 25%;
+      background-color: #443266;
+      text-align: center;
+      color: #F1F0FF;
+    }
+    table, td, th {
+      border: 1px solid #ddd;
+      text-align: center;
+      font-size: 20px;
+      color: #8C489F;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      padding: 15px;
+    }
+    td{font-size: 18px;}
+    tr:nth-child(even){background-color: #ebdef0;}
+
+    .button{
+      color: #fff;
+      background-color: #443266;
+    }
+    .text{
+      height: 45px;
+    }
+    #middle{
+      margin-left: 30%;
+      margin-right: 30%;
+      background-color: #443266;
+      height: 75%;
+    }
+  </style>
+</head>
+<body style="background-color: #F1F0FF;">
+<div id="header"><br>
+  <h1><i><u>Welcome To Angular JS Assignment Demo </u></i></h1>
+  <h3><u>In This Demo You can Add and View the Student Detail </u></h3>
+  <h3>Same Page # Power of SPA</h3>
+</div>
+
+ <div ui-view>
+
+ </div>
+</body>
+</html>

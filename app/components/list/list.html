@@ -1,0 +1,27 @@
+<center>
+    <div ng-controller="Events">
+        <br><br>
+        <h2 style="color: #8C489F;">Add The Student Details Here <input type="button" class="button" style="height: 35px;" value="Add Student" ng-click="callAdd()"></h2>
+        <table>
+            <tr>
+                <th style="width: 100%;"><h3>Search Student By Id :- <input type="text" size="5" ng-model="searchId"></h3></th>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th><u>Student ID</u></th>
+                <th><u>Student Name</u></th>
+                <th><u>Student Email</u></th>
+                <th><u>For Edit</u></th>
+                <th><u>For Delete</u></th>
+            </tr>
+            <tr ng-repeat="item in listOfItems | filter:searchId">
+                <td><b>{{item.id}}</b></td>
+                <td><b>{{item.name}}</b></td>
+                <td><b>{{item.email}}</b></td>
+                <td><input type="button" class="button" value="Edit"></td>
+                <td><input type="button" class="button" value="Delete"></td>
+            </tr>
+        </table>
+    </div>
+</center>
